@@ -34,13 +34,13 @@ const Header = () => {
 
   return (
     <div className="flex justify-between p-2 md:gap-4">
-      <div className="flex items-center gap-4 bg-[--navbarColor] px-3 rounded-full md:w-[21%]">
+      <div className="flex items-center gap-4 bg-[--navbarColor] px-3 rounded-full md:w-[18%] md:fixed">
         <div className="flex items-center py-1.5 gap-2">
           <FaSteam className="text-[--themeColor]" size={22} />
           <span className="text-white">Steam</span>
         </div>
       </div>
-      <div className="flex items-center text-[--whiteColor] md:w-full">
+      <div className="flex items-center text-[--whiteColor] md:w-full md:mx-[20%]">
         <div className="flex items-center gap-1 absolute mx-3 text-white/20">
           <IoSearchOutline className="" />
           <span className="font-light text-sm">Buscar</span>
