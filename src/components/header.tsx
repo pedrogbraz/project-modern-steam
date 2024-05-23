@@ -51,9 +51,44 @@ const Header = () => {
         />
       </div>
       <div className="flex gap-2">
-        <Button className="shadow-none" size="icon">
-          <IoCartOutline className="text-[--whiteColor] hover:text-white/80" size={20} />
-        </Button>
+      <Sheet>
+          <SheetTrigger className="">
+            <IoMenu size={22} className="text-[--whiteColor] hover:text-white/80" />
+          </SheetTrigger>
+          <SheetContent className="flex flex-col gap-5 border-0 text-white bg-[--backgroundColor]">
+            <SheetHeader>
+              <div className="flex justify-between items-center">
+                <div className="flex gap-3 items-center">
+                  <Avatar>
+                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <div className="flex flex-col">
+                    <h2 className="text-sm text-[--whiteColor]">
+                      Your Username
+                    </h2>
+                    <div className="flex items-center gap-1">
+                      <span className="text-xs text-[--textColor]">Online</span>
+                      {isOnline ? (
+                        <div className="size-[5px] bg-green-500 rounded-full"></div>
+                      ) : (
+                        <div className="size-[5px] bg-red-500 rounded-full"></div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <Link
+                  href="/"
+                  className="text-[--textColor] focus:text-[--themeColor] hover:text-white/85 focus:bg-[--navbarColor] rounded-full p-2 duration-300"
+                >
+                  <IoSettingsOutline size={20} />
+                </Link>
+              </div>
+            </SheetHeader>
+            <Separator className=" bg-[--navbarColor]" />
+           
+          </SheetContent>
+        </Sheet>
         <Sheet>
           <SheetTrigger className="md:hidden">
             <IoMenu size={22} className="text-[--whiteColor] hover:text-white/80" />
