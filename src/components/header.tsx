@@ -53,7 +53,7 @@ const Header = () => {
       <div className="flex gap-2">
       <Sheet>
           <SheetTrigger className="">
-            <IoMenu size={22} className="text-[--whiteColor] hover:text-white/80" />
+            <IoCartOutline size={22} className="text-[--whiteColor] hover:text-white/80" />
           </SheetTrigger>
           <SheetContent className="flex flex-col gap-5 border-0 text-white bg-[--backgroundColor]">
             <SheetHeader>
