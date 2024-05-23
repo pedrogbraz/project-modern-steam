@@ -38,7 +38,7 @@ const Menubar = () => {
           </div>
           <Link
             href="/"
-            className="text-[--whiteColor] focus:text-[--themeColor] hover:text-[--textColor] focus:bg-white/10 rounded-full p-2 duration-300"
+            className="text-[--whiteColor] focus:text-[--themeColor] hover:text-[--themeColor] focus:bg-white/10 rounded-full p-2 duration-200"
           >
             <IoSettingsOutline size={20} />
           </Link>
@@ -47,7 +47,7 @@ const Menubar = () => {
         <div className="flex flex-col justify-between font-light gap-1 text-[--whiteColor]">
           <Link
             href="/"
-            className="p-2 rounded-full px-3 flex items-center gap-2 focus:bg-white/10 hover:text-[--textColor] focus:text-[--themeColor] duration-300"
+            className="p-2 rounded-full px-3 flex items-center gap-2 focus:bg-white/10 hover:text-[--textColor] focus:text-[--themeColor] duration-200"
           >
             <IoHomeOutline size={18} />
             <span className="text-sm">Início</span>
